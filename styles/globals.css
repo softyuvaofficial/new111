@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Body base styles */
+body {
+  @apply bg-white text-gray-900 font-sans;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Link styles */
+a {
+  @apply text-blue-600 hover:text-blue-700 transition;
+  text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-gray-800;
+  margin: 0;
+}
+
+/* Buttons reset */
+button {
+  @apply cursor-pointer;
+}
+
+/* Utility for visually hidden elements (accessibility) */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; 
+  width: 1px; 
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Dark mode support if needed */
+/* You can add a dark mode class or use media queries here */
